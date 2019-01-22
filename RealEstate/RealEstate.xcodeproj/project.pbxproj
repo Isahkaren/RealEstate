@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78755A0221CFF98D00B7DDE3 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0121CFF98D00B7DDE3 /* Connector.swift */; };
+		78755A0421CFFB4800B7DDE3 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0321CFFB4800B7DDE3 /* NetworkingError.swift */; };
+		78755A0621CFFD9300B7DDE3 /* HTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0521CFFD9300B7DDE3 /* HTTPResult.swift */; };
+		78755A0821CFFFE300B7DDE3 /* TypedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0721CFFFE300B7DDE3 /* TypedResult.swift */; };
+		78755A0A21D0003000B7DDE3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0921D0003000B7DDE3 /* Endpoint.swift */; };
+		78755A0C21D0007D00B7DDE3 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0B21D0007D00B7DDE3 /* Environment.swift */; };
+		78755A0E21D0021200B7DDE3 /* EndpointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A0D21D0021200B7DDE3 /* EndpointError.swift */; };
+		78755A1321D006F900B7DDE3 /* RealEstateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A1221D006F900B7DDE3 /* RealEstateService.swift */; };
+		78755A1521D0079B00B7DDE3 /* RealEstateEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A1421D0079B00B7DDE3 /* RealEstateEndpoint.swift */; };
+		78755A1D21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A1C21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift */; };
+		78755A2C21D1294E00B7DDE3 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A2B21D1294E00B7DDE3 /* SimpleAlert.swift */; };
+		78755A2E21D1368C00B7DDE3 /* RealEstateAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A2D21D1368C00B7DDE3 /* RealEstateAd.swift */; };
+		78755A3021D153A400B7DDE3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A2F21D153A400B7DDE3 /* CoreDataStack.swift */; };
+		78755A3721D168DE00B7DDE3 /* UIImage+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A1C21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift */; };
+		78755A3A21D16AB100B7DDE3 /* EndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A3921D16AB100B7DDE3 /* EndpointsTests.swift */; };
+		78755A3C21D16BF500B7DDE3 /* ConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A3B21D16BF500B7DDE3 /* ConnectorTests.swift */; };
+		78755A3E21D16D9200B7DDE3 /* URLSessionMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A3D21D16D9200B7DDE3 /* URLSessionMocks.swift */; };
+		78755A4421D1706B00B7DDE3 /* MockRealEstateServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A4321D1706B00B7DDE3 /* MockRealEstateServices.swift */; };
+		78755A4621D1751300B7DDE3 /* RealEstateEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A4521D1751300B7DDE3 /* RealEstateEndpointTests.swift */; };
+		78755A4821D176F800B7DDE3 /* RealEstateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A4721D176F800B7DDE3 /* RealEstateControllerTests.swift */; };
+		78755A4A21D1795800B7DDE3 /* MockRealEstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A4921D1795800B7DDE3 /* MockRealEstateView.swift */; };
+		78755A4C21D241F800B7DDE3 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A4B21D241F800B7DDE3 /* FavoritesController.swift */; };
+		78755A5921D26A4400B7DDE3 /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A5721D26A4400B7DDE3 /* Favorites+CoreDataClass.swift */; };
+		78755A5A21D26A4400B7DDE3 /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A5821D26A4400B7DDE3 /* Favorites+CoreDataProperties.swift */; };
+		78755A5E21D2A37A00B7DDE3 /* FavoriteEstateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A5D21D2A37A00B7DDE3 /* FavoriteEstateControllerTests.swift */; };
+		78755A6021D2A45C00B7DDE3 /* MockFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78755A5F21D2A45C00B7DDE3 /* MockFavoriteView.swift */; };
+		78BFA26D21CD117C00EA28E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA26C21CD117B00EA28E9 /* AppDelegate.swift */; };
+		78BFA27521CD117C00EA28E9 /* RealEstate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA27321CD117C00EA28E9 /* RealEstate.xcdatamodeld */; };
+		78BFA27721CD117D00EA28E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BFA27621CD117D00EA28E9 /* Assets.xcassets */; };
+		78BFA27A21CD117D00EA28E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BFA27821CD117D00EA28E9 /* LaunchScreen.storyboard */; };
+		78BFA29021CD165400EA28E9 /* RealEstate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BFA28F21CD165400EA28E9 /* RealEstate.storyboard */; };
+		78BFA29621CE633800EA28E9 /* RealEstateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA29521CE633800EA28E9 /* RealEstateList.swift */; };
+		78BFA29821CE637E00EA28E9 /* RealEstate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA29721CE637E00EA28E9 /* RealEstate.swift */; };
+		78BFA29A21CE648700EA28E9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA29921CE648700EA28E9 /* Location.swift */; };
+		78BFA29C21CE655300EA28E9 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA29B21CE655300EA28E9 /* Image.swift */; };
+		78BFA2A221CE6FFF00EA28E9 /* RealEstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA2A121CE6FFF00EA28E9 /* RealEstateView.swift */; };
+		78BFA2A421CE701600EA28E9 /* RealEstateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA2A321CE701600EA28E9 /* RealEstateController.swift */; };
+		78BFA2A621CE70B500EA28E9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA2A521CE70B500EA28E9 /* FavoritesView.swift */; };
+		78BFA2AA21CE723C00EA28E9 /* RealEstateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA2A921CE723C00EA28E9 /* RealEstateTableViewCell.swift */; };
+		78BFA2AC21CE749300EA28E9 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BFA2AB21CE749300EA28E9 /* FavoritesCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78BFA28121CD117D00EA28E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78BFA26121CD117B00EA28E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78BFA26821CD117B00EA28E9;
+			remoteInfo = RealEstate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78755A0121CFF98D00B7DDE3 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		78755A0321CFFB4800B7DDE3 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		78755A0521CFFD9300B7DDE3 /* HTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResult.swift; sourceTree = "<group>"; };
+		78755A0721CFFFE300B7DDE3 /* TypedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedResult.swift; sourceTree = "<group>"; };
+		78755A0921D0003000B7DDE3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		78755A0B21D0007D00B7DDE3 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		78755A0D21D0021200B7DDE3 /* EndpointError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointError.swift; sourceTree = "<group>"; };
+		78755A1221D006F900B7DDE3 /* RealEstateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateService.swift; sourceTree = "<group>"; };
+		78755A1421D0079B00B7DDE3 /* RealEstateEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateEndpoint.swift; sourceTree = "<group>"; };
+		78755A1C21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DownloadImage.swift"; sourceTree = "<group>"; };
+		78755A2B21D1294E00B7DDE3 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		78755A2D21D1368C00B7DDE3 /* RealEstateAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateAd.swift; sourceTree = "<group>"; };
+		78755A2F21D153A400B7DDE3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		78755A3921D16AB100B7DDE3 /* EndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsTests.swift; sourceTree = "<group>"; };
+		78755A3B21D16BF500B7DDE3 /* ConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorTests.swift; sourceTree = "<group>"; };
+		78755A3D21D16D9200B7DDE3 /* URLSessionMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMocks.swift; sourceTree = "<group>"; };
+		78755A4321D1706B00B7DDE3 /* MockRealEstateServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRealEstateServices.swift; sourceTree = "<group>"; };
+		78755A4521D1751300B7DDE3 /* RealEstateEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateEndpointTests.swift; sourceTree = "<group>"; };
+		78755A4721D176F800B7DDE3 /* RealEstateControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateControllerTests.swift; sourceTree = "<group>"; };
+		78755A4921D1795800B7DDE3 /* MockRealEstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRealEstateView.swift; sourceTree = "<group>"; };
+		78755A4B21D241F800B7DDE3 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
+		78755A5721D26A4400B7DDE3 /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		78755A5821D26A4400B7DDE3 /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		78755A5D21D2A37A00B7DDE3 /* FavoriteEstateControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteEstateControllerTests.swift; sourceTree = "<group>"; };
+		78755A5F21D2A45C00B7DDE3 /* MockFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoriteView.swift; sourceTree = "<group>"; };
+		78BFA26921CD117B00EA28E9 /* RealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BFA26C21CD117B00EA28E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78BFA27421CD117C00EA28E9 /* RealEstate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealEstate.xcdatamodel; sourceTree = "<group>"; };
+		78BFA27621CD117D00EA28E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78BFA27921CD117D00EA28E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78BFA27B21CD117D00EA28E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BFA28021CD117D00EA28E9 /* RealEstateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealEstateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BFA28621CD117D00EA28E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78BFA28F21CD165400EA28E9 /* RealEstate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealEstate.storyboard; sourceTree = "<group>"; };
+		78BFA29521CE633800EA28E9 /* RealEstateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateList.swift; sourceTree = "<group>"; };
+		78BFA29721CE637E00EA28E9 /* RealEstate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstate.swift; sourceTree = "<group>"; };
+		78BFA29921CE648700EA28E9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		78BFA29B21CE655300EA28E9 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		78BFA2A121CE6FFF00EA28E9 /* RealEstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateView.swift; sourceTree = "<group>"; };
+		78BFA2A321CE701600EA28E9 /* RealEstateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateController.swift; sourceTree = "<group>"; };
+		78BFA2A521CE70B500EA28E9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		78BFA2A921CE723C00EA28E9 /* RealEstateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTableViewCell.swift; sourceTree = "<group>"; };
+		78BFA2AB21CE749300EA28E9 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78BFA26621CD117B00EA28E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78BFA27D21CD117D00EA28E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78755A0021CFF93400B7DDE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA27621CD117D00EA28E9 /* Assets.xcassets */,
+				78BFA27821CD117D00EA28E9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78755A0F21D003C200B7DDE3 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				78755A2821D0F85D00B7DDE3 /* Models */,
+				78BFA2AB21CE749300EA28E9 /* FavoritesCollectionViewCell.swift */,
+				78BFA2A521CE70B500EA28E9 /* FavoritesView.swift */,
+				78755A4B21D241F800B7DDE3 /* FavoritesController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		78755A1021D0064000B7DDE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78755A1121D0064000B7DDE3 /* Endpoint */,
+				78755A1221D006F900B7DDE3 /* RealEstateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78755A1121D0064000B7DDE3 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				78755A1421D0079B00B7DDE3 /* RealEstateEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		78755A2221D074CD00B7DDE3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA27321CD117C00EA28E9 /* RealEstate.xcdatamodeld */,
+				78755A2F21D153A400B7DDE3 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		78755A2321D074D600B7DDE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78755A1C21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78755A2821D0F85D00B7DDE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78755A5721D26A4400B7DDE3 /* Favorites+CoreDataClass.swift */,
+				78755A5821D26A4400B7DDE3 /* Favorites+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78755A3121D1671000B7DDE3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78755A3F21D16FB200B7DDE3 /* RealEstate */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		78755A3221D1671800B7DDE3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				78755A3421D1674600B7DDE3 /* Networking */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		78755A3421D1674600B7DDE3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				78755A3821D16A2D00B7DDE3 /* Mocks */,
+				78755A3921D16AB100B7DDE3 /* EndpointsTests.swift */,
+				78755A3B21D16BF500B7DDE3 /* ConnectorTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		78755A3821D16A2D00B7DDE3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				78755A3D21D16D9200B7DDE3 /* URLSessionMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		78755A3F21D16FB200B7DDE3 /* RealEstate */ = {
+			isa = PBXGroup;
+			children = (
+				78755A4221D1701100B7DDE3 /* Services */,
+				78755A4121D1700900B7DDE3 /* Mocks */,
+				78755A4021D16FFF00B7DDE3 /* Controllers */,
+			);
+			path = RealEstate;
+			sourceTree = "<group>";
+		};
+		78755A4021D16FFF00B7DDE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78755A4721D176F800B7DDE3 /* RealEstateControllerTests.swift */,
+				78755A5D21D2A37A00B7DDE3 /* FavoriteEstateControllerTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		78755A4121D1700900B7DDE3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				78755A4321D1706B00B7DDE3 /* MockRealEstateServices.swift */,
+				78755A4921D1795800B7DDE3 /* MockRealEstateView.swift */,
+				78755A5F21D2A45C00B7DDE3 /* MockFavoriteView.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		78755A4221D1701100B7DDE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78755A4521D1751300B7DDE3 /* RealEstateEndpointTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78BFA26021CD117B00EA28E9 = {
+			isa = PBXGroup;
+			children = (
+				78BFA26B21CD117B00EA28E9 /* RealEstate */,
+				78BFA28321CD117D00EA28E9 /* RealEstateTests */,
+				78BFA26A21CD117B00EA28E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78BFA26A21CD117B00EA28E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA26921CD117B00EA28E9 /* RealEstate.app */,
+				78BFA28021CD117D00EA28E9 /* RealEstateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78BFA26B21CD117B00EA28E9 /* RealEstate */ = {
+			isa = PBXGroup;
+			children = (
+				78755A0021CFF93400B7DDE3 /* Resources */,
+				78BFA29121CE622400EA28E9 /* Application */,
+				78BFA29221CE622F00EA28E9 /* Conveniences */,
+				78BFA29421CE624C00EA28E9 /* Scenes */,
+			);
+			path = RealEstate;
+			sourceTree = "<group>";
+		};
+		78BFA28321CD117D00EA28E9 /* RealEstateTests */ = {
+			isa = PBXGroup;
+			children = (
+				78755A3221D1671800B7DDE3 /* Utils */,
+				78755A3121D1671000B7DDE3 /* Scenes */,
+				78BFA28621CD117D00EA28E9 /* Info.plist */,
+			);
+			path = RealEstateTests;
+			sourceTree = "<group>";
+		};
+		78BFA29121CE622400EA28E9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA27B21CD117D00EA28E9 /* Info.plist */,
+				78BFA26C21CD117B00EA28E9 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		78BFA29221CE622F00EA28E9 /* Conveniences */ = {
+			isa = PBXGroup;
+			children = (
+				78755A0721CFFFE300B7DDE3 /* TypedResult.swift */,
+				78755A2321D074D600B7DDE3 /* Extensions */,
+				78755A2221D074CD00B7DDE3 /* CoreData */,
+				78BFA2AD21CE9CEB00EA28E9 /* Networking */,
+				78755A2B21D1294E00B7DDE3 /* SimpleAlert.swift */,
+			);
+			path = Conveniences;
+			sourceTree = "<group>";
+		};
+		78BFA29321CE623D00EA28E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA29521CE633800EA28E9 /* RealEstateList.swift */,
+				78BFA29721CE637E00EA28E9 /* RealEstate.swift */,
+				78BFA29921CE648700EA28E9 /* Location.swift */,
+				78BFA29B21CE655300EA28E9 /* Image.swift */,
+				78755A2D21D1368C00B7DDE3 /* RealEstateAd.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78BFA29421CE624C00EA28E9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA28F21CD165400EA28E9 /* RealEstate.storyboard */,
+				78BFA29D21CE678200EA28E9 /* RealEstate */,
+				78755A0F21D003C200B7DDE3 /* Favorites */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		78BFA29D21CE678200EA28E9 /* RealEstate */ = {
+			isa = PBXGroup;
+			children = (
+				78BFA29321CE623D00EA28E9 /* Models */,
+				78755A1021D0064000B7DDE3 /* Services */,
+				78BFA2A121CE6FFF00EA28E9 /* RealEstateView.swift */,
+				78BFA2A321CE701600EA28E9 /* RealEstateController.swift */,
+				78BFA2A921CE723C00EA28E9 /* RealEstateTableViewCell.swift */,
+			);
+			path = RealEstate;
+			sourceTree = "<group>";
+		};
+		78BFA2AD21CE9CEB00EA28E9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				78755A0121CFF98D00B7DDE3 /* Connector.swift */,
+				78755A0321CFFB4800B7DDE3 /* NetworkingError.swift */,
+				78755A0521CFFD9300B7DDE3 /* HTTPResult.swift */,
+				78755A0921D0003000B7DDE3 /* Endpoint.swift */,
+				78755A0B21D0007D00B7DDE3 /* Environment.swift */,
+				78755A0D21D0021200B7DDE3 /* EndpointError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78BFA26821CD117B00EA28E9 /* RealEstate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78BFA28921CD117D00EA28E9 /* Build configuration list for PBXNativeTarget "RealEstate" */;
+			buildPhases = (
+				78BFA26521CD117B00EA28E9 /* Sources */,
+				78BFA26621CD117B00EA28E9 /* Frameworks */,
+				78BFA26721CD117B00EA28E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealEstate;
+			productName = RealEstate;
+			productReference = 78BFA26921CD117B00EA28E9 /* RealEstate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78BFA27F21CD117D00EA28E9 /* RealEstateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78BFA28C21CD117D00EA28E9 /* Build configuration list for PBXNativeTarget "RealEstateTests" */;
+			buildPhases = (
+				78BFA27C21CD117D00EA28E9 /* Sources */,
+				78BFA27D21CD117D00EA28E9 /* Frameworks */,
+				78BFA27E21CD117D00EA28E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78BFA28221CD117D00EA28E9 /* PBXTargetDependency */,
+			);
+			name = RealEstateTests;
+			productName = RealEstateTests;
+			productReference = 78BFA28021CD117D00EA28E9 /* RealEstateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78BFA26121CD117B00EA28E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Isabela Karen";
+				TargetAttributes = {
+					78BFA26821CD117B00EA28E9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					78BFA27F21CD117D00EA28E9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 78BFA26821CD117B00EA28E9;
+					};
+				};
+			};
+			buildConfigurationList = 78BFA26421CD117B00EA28E9 /* Build configuration list for PBXProject "RealEstate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78BFA26021CD117B00EA28E9;
+			productRefGroup = 78BFA26A21CD117B00EA28E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78BFA26821CD117B00EA28E9 /* RealEstate */,
+				78BFA27F21CD117D00EA28E9 /* RealEstateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78BFA26721CD117B00EA28E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BFA29021CD165400EA28E9 /* RealEstate.storyboard in Resources */,
+				78BFA27A21CD117D00EA28E9 /* LaunchScreen.storyboard in Resources */,
+				78BFA27721CD117D00EA28E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78BFA27E21CD117D00EA28E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78BFA26521CD117B00EA28E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78755A1321D006F900B7DDE3 /* RealEstateService.swift in Sources */,
+				78BFA2AA21CE723C00EA28E9 /* RealEstateTableViewCell.swift in Sources */,
+				78BFA2AC21CE749300EA28E9 /* FavoritesCollectionViewCell.swift in Sources */,
+				78755A5A21D26A4400B7DDE3 /* Favorites+CoreDataProperties.swift in Sources */,
+				78755A3021D153A400B7DDE3 /* CoreDataStack.swift in Sources */,
+				78BFA26D21CD117C00EA28E9 /* AppDelegate.swift in Sources */,
+				78755A1D21D03F9B00B7DDE3 /* UIImage+DownloadImage.swift in Sources */,
+				78BFA29C21CE655300EA28E9 /* Image.swift in Sources */,
+				78755A0221CFF98D00B7DDE3 /* Connector.swift in Sources */,
+				78755A0621CFFD9300B7DDE3 /* HTTPResult.swift in Sources */,
+				78755A2C21D1294E00B7DDE3 /* SimpleAlert.swift in Sources */,
+				78BFA2A421CE701600EA28E9 /* RealEstateController.swift in Sources */,
+				78BFA27521CD117C00EA28E9 /* RealEstate.xcdatamodeld in Sources */,
+				78BFA2A221CE6FFF00EA28E9 /* RealEstateView.swift in Sources */,
+				78755A1521D0079B00B7DDE3 /* RealEstateEndpoint.swift in Sources */,
+				78755A0E21D0021200B7DDE3 /* EndpointError.swift in Sources */,
+				78BFA29A21CE648700EA28E9 /* Location.swift in Sources */,
+				78755A0421CFFB4800B7DDE3 /* NetworkingError.swift in Sources */,
+				78755A0821CFFFE300B7DDE3 /* TypedResult.swift in Sources */,
+				78755A0C21D0007D00B7DDE3 /* Environment.swift in Sources */,
+				78755A4C21D241F800B7DDE3 /* FavoritesController.swift in Sources */,
+				78BFA29621CE633800EA28E9 /* RealEstateList.swift in Sources */,
+				78BFA29821CE637E00EA28E9 /* RealEstate.swift in Sources */,
+				78755A5921D26A4400B7DDE3 /* Favorites+CoreDataClass.swift in Sources */,
+				78755A0A21D0003000B7DDE3 /* Endpoint.swift in Sources */,
+				78755A2E21D1368C00B7DDE3 /* RealEstateAd.swift in Sources */,
+				78BFA2A621CE70B500EA28E9 /* FavoritesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78BFA27C21CD117D00EA28E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78755A3C21D16BF500B7DDE3 /* ConnectorTests.swift in Sources */,
+				78755A3E21D16D9200B7DDE3 /* URLSessionMocks.swift in Sources */,
+				78755A6021D2A45C00B7DDE3 /* MockFavoriteView.swift in Sources */,
+				78755A4A21D1795800B7DDE3 /* MockRealEstateView.swift in Sources */,
+				78755A4821D176F800B7DDE3 /* RealEstateControllerTests.swift in Sources */,
+				78755A4421D1706B00B7DDE3 /* MockRealEstateServices.swift in Sources */,
+				78755A3A21D16AB100B7DDE3 /* EndpointsTests.swift in Sources */,
+				78755A5E21D2A37A00B7DDE3 /* FavoriteEstateControllerTests.swift in Sources */,
+				78755A4621D1751300B7DDE3 /* RealEstateEndpointTests.swift in Sources */,
+				78755A3721D168DE00B7DDE3 /* UIImage+DownloadImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78BFA28221CD117D00EA28E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78BFA26821CD117B00EA28E9 /* RealEstate */;
+			targetProxy = 78BFA28121CD117D00EA28E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78BFA27821CD117D00EA28E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78BFA27921CD117D00EA28E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78BFA28721CD117D00EA28E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78BFA28821CD117D00EA28E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78BFA28A21CD117D00EA28E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7C64S45G6;
+				INFOPLIST_FILE = "$(SRCROOT)/RealEstate/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaKaren.RealEstate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78BFA28B21CD117D00EA28E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7C64S45G6;
+				INFOPLIST_FILE = "$(SRCROOT)/RealEstate/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaKaren.RealEstate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78BFA28D21CD117D00EA28E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7C64S45G6;
+				INFOPLIST_FILE = RealEstateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaKaren.RealEstateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstate.app/RealEstate";
+			};
+			name = Debug;
+		};
+		78BFA28E21CD117D00EA28E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7C64S45G6;
+				INFOPLIST_FILE = RealEstateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = isabelaKaren.RealEstateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealEstate.app/RealEstate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78BFA26421CD117B00EA28E9 /* Build configuration list for PBXProject "RealEstate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BFA28721CD117D00EA28E9 /* Debug */,
+				78BFA28821CD117D00EA28E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78BFA28921CD117D00EA28E9 /* Build configuration list for PBXNativeTarget "RealEstate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BFA28A21CD117D00EA28E9 /* Debug */,
+				78BFA28B21CD117D00EA28E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78BFA28C21CD117D00EA28E9 /* Build configuration list for PBXNativeTarget "RealEstateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78BFA28D21CD117D00EA28E9 /* Debug */,
+				78BFA28E21CD117D00EA28E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78BFA27321CD117C00EA28E9 /* RealEstate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78BFA27421CD117C00EA28E9 /* RealEstate.xcdatamodel */,
+			);
+			currentVersion = 78BFA27421CD117C00EA28E9 /* RealEstate.xcdatamodel */;
+			path = RealEstate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78BFA26121CD117B00EA28E9 /* Project object */;
+}
